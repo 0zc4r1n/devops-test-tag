@@ -1,0 +1,12 @@
+name: test tag
+on:
+  push:
+    tags:
+      - v**
+jobs:
+  test-tag:
+    run-on: ubuntu-latest
+    steps:
+      name: version
+      run: |
+        echo $GITHUB_REF
