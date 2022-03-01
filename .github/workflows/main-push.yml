@@ -10,3 +10,4 @@ jobs:
       - name: version
         run: |
           echo $GITHUB_REF
+          echo $GITHUB_REF_NAME
