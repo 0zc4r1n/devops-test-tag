@@ -5,8 +5,8 @@ on:
       - v**
 jobs:
   test-tag:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
-      name: version
-      run: |
-        echo $GITHUB_REF
+      - name: version
+        run: |
+          echo $GITHUB_REF
