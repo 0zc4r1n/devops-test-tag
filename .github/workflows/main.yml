@@ -11,3 +11,4 @@ jobs:
         run: |
           export VERSION=$(basename $GITHUB_REF)
           echo $VERSION
+          echo $GITHUB_REF_NAME
